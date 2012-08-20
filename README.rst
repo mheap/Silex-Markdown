@@ -1,27 +1,5 @@
-Silex Extensions
+Silex-Markdown
 ================
-
-Collection of extensions for `Silex <https://github.com/fabot/silex>`_.
-
-Available Extensions
---------------------
-
-* **AsseticExtension** (Assetic asset management library)
-* **EmbedlyExtension** (embed.ly web service, uses embedly-php fork)
-* **GravatarExtension** (gravatar.com web service, uses gravatar-php library)
-* **MandangoExtension** (Mandango ODM for MongoDB NoSQL database)
-* **MarkdownExtension** (Markdown support, uses KnpLabs\\MarkdownBundle)
-* **MemcacheExtension** (Memcache caching layer, non-permanent key/value store, uses pecl-memcache or pecl-memcached)
-* **MongoDbExtension** (MongoDB NoSQL database, uses Doctrine\\MongoDB library)
-* **PredisExtension** (Redis key/value store, uses Predis php library)
-
-Extensions with Twig Support
-----------------------------
-
-* **AsseticExtension**
-* **EmbedlyExtension**
-* **GravatarExtension**
-* **MarkdownExtension**
 
 Installation
 ------------
@@ -30,7 +8,7 @@ Create a composer.json in your projects root-directory::
 
     {
         "require": {
-            "fate/Silex-Extensions": "*"
+            "mheap/Silex-Markdown": "*"
         }
     }
 
@@ -40,10 +18,6 @@ and run::
     php composer.phar install
 
 
-Add the library to the Silex autoloader::
-
-    $app['autoloader']->registerNamespace('SilexExtension', __DIR__ . '/vendor/silex-extension/src');
-
 More Information
 ----------------
 
@@ -52,4 +26,4 @@ Read the documentation files under */doc*.
 License
 -------
 
-'Silex Extensions' are licensed under the MIT license.
+'Silex-Markdown' is licensed under the MIT license.
