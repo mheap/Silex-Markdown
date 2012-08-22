@@ -1,12 +1,12 @@
 <?php
 
-namespace SilexExtension\Tests\Extension;
+namespace SilexMarkdown\Tests\Extension;
 
 use Silex\Application;
 
 use Symfony\Component\HttpFoundation\Request;
 
-use SilexExtension\MarkdownExtension;
+use SilexMarkdown\MarkdownExtension;
 
 class MarkdownExtensionTest extends \PHPUnit_Framework_TestCase
 {
@@ -21,7 +21,7 @@ class MarkdownExtensionTest extends \PHPUnit_Framework_TestCase
     {
         $app = new Application();
         $app->register(new MarkdownExtension(), array(
-            'markdown.class_path' => __DIR__ . '/../../../vendor/knplabs-markdown'
+
         ));
 
         $app->get('/', function() use($app) {
@@ -43,7 +43,6 @@ EOT;
     {
         $app = new Application();
         $app->register(new MarkdownExtension(), array(
-            'markdown.class_path' => __DIR__ . '/../../../vendor/knplabs-markdown',
             'markdown.features'   => array(
                 'header' => false,
             )
