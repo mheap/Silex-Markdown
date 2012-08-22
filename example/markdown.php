@@ -1,6 +1,5 @@
 <?php
 
-require_once __DIR__ . '/../functions.php';
 require_once __DIR__ . '/../silex.phar';
 
 $app = new Silex\Application();
@@ -10,8 +9,7 @@ $app->register(new Silex\Extension\TwigExtension(), array(
     'twig.path'       => __DIR__ . '/twig'
 ));
         
-$app['autoloader']->registerNamespace('SilexExtension', __DIR__ . '/../src');
-$app->register(new SilexExtension\MarkdownExtension(), array(
+$app->register(new SilexMarkdown\MarkdownExtension(), array(
     'markdown.class_path' => __DIR__ . '/../vendor/knplabs-markdown',
     'markdown.features'   => array(
         'header' => true,

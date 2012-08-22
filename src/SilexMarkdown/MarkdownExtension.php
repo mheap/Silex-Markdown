@@ -1,13 +1,13 @@
 <?php
 
-namespace SilexExtension;
+namespace SilexMarkdown;
 
 use Silex\Application;
 use Silex\ServiceProviderInterface;
 
 use Knp\Bundle\MarkdownBundle\Parser\MarkdownParser;
 
-use SilexExtension\MarkdownExtension\MarkdownTwigExtension;
+use SilexMarkdown\MarkdownExtension\MarkdownTwigExtension;
 
 class MarkdownExtension implements ServiceProviderInterface
 {

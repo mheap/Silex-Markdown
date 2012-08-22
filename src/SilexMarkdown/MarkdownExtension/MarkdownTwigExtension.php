@@ -1,7 +1,7 @@
 <?php
 
 
-namespace SilexExtension\MarkdownExtension;
+namespace SilexMarkdown\MarkdownExtension;
 
 use Knp\Bundle\MarkdownBundle\Parser\MarkdownParser;
 

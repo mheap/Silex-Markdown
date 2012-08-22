@@ -25,7 +25,6 @@ directory.
   Example registration and configuration::
 
     // add SilexExtension library to the autoloader 
-    $app['autoloader']->registerNamespace('SilexExtension', __DIR__ . '/path/to/silex-extensions');
     $app->register(new SilexExtension\MarkdownExtension(), array(
         'markdown.class_path' => __DIR__ . '/vendor/knplabs-markdown',
         'markdown.features'   => array(
