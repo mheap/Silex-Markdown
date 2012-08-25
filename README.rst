@@ -1,6 +1,8 @@
 Silex-Markdown
 ================
 
+<img src="https://secure.travis-ci.org/mheap/Silex-Markdown.png?branch=master" />
+
 Installation
 ------------
 
