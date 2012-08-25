@@ -1,7 +1,7 @@
 Silex-Markdown
 ================
 
-<a href="http://travis-ci.org/mheap/Silex-Markdown"><img src="https://secure.travis-ci.org/mheap/Silex-Markdown.png?branch=master" /></a>
+[![Build Status](https://secure.travis-ci.org/mheap/Silex-Markdown.png?branch=master)](http://travis-ci.org/mheap/Silex-Markdown)
 
 Installation
 ------------
