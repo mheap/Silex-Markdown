@@ -1,5 +1,5 @@
 {
-    "hash": "ce52789adb8a8fae99eda3a378c06376",
+    "hash": "be1f547c1b19b3d2e6161782dfe22ed3",
     "packages": [
         {
             "package": "doctrine/common",
@@ -58,8 +58,8 @@
         {
             "package": "symfony/filesystem",
             "version": "dev-master",
-            "source-reference": "v2.1.0-RC1",
-            "commit-date": "1343491637"
+            "source-reference": "72acf65c2390c9066e1174d269a4e146ffad9296",
+            "commit-date": "1344875591"
         },
         {
             "package": "symfony/framework-bundle",
@@ -70,8 +70,8 @@
         {
             "package": "symfony/framework-bundle",
             "version": "dev-master",
-            "source-reference": "4f0d296b4414cb5322e7ee45af117e5234bc75d0",
-            "commit-date": "1345278333"
+            "source-reference": "28756a9b9fb59e4ac9482f9dc6fbfb0b88d47953",
+            "commit-date": "1345819300"
         },
         {
             "package": "symfony/http-foundation",
@@ -106,8 +106,8 @@
         {
             "package": "symfony/routing",
             "version": "dev-master",
-            "source-reference": "v2.1.0-RC1",
-            "commit-date": "1343744077"
+            "source-reference": "0bdaa1e6b2d814ec5946b355407c849ce5f0b64a",
+            "commit-date": "1345710062"
         },
         {
             "package": "symfony/templating",
@@ -156,8 +156,20 @@
         {
             "package": "silex/silex",
             "version": "dev-master",
-            "source-reference": "6d7cf048c704c0c58276b01eccfacab4dd11d013",
-            "commit-date": "1344453846"
+            "source-reference": "331454f7235da0aea8bd9c7e5fe5cfd9f043a069",
+            "commit-date": "1345728064"
+        },
+        {
+            "package": "twig/twig",
+            "version": "dev-master",
+            "alias-pretty-version": "1.9.x-dev",
+            "alias-version": "1.9.9999999.9999999-dev"
+        },
+        {
+            "package": "twig/twig",
+            "version": "dev-master",
+            "source-reference": "ddc154fe4c6663e36de6c33fc38167e791f4adda",
+            "commit-date": "1345816246"
         }
     ],
     "aliases": [
