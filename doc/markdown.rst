@@ -24,9 +24,8 @@ directory.
 
   Example registration and configuration::
 
-    // add SilexExtension library to the autoloader 
-    $app->register(new SilexExtension\MarkdownExtension(), array(
-        'markdown.class_path' => __DIR__ . '/vendor/knplabs-markdown',
+    // add SilexMarkdown library to the autoloader 
+    $app->register(new SilexMarkdown\MarkdownExtension(), array(
         'markdown.features'   => array(
             'header' => false, // don't render first level headlines
         ),
