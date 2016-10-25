@@ -22,7 +22,7 @@
         "knplabs/knp-markdown-bundle": "*"
     },
     "require-dev": {
-        "silex/silex": "*",
+        "silex/silex": "~2.0",
         "twig/twig": ">=1.2.0"
     },
     "autoload": {
