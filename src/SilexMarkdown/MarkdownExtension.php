@@ -2,8 +2,8 @@
 
 namespace SilexMarkdown;
 
-use Silex\Application;
-use Silex\ServiceProviderInterface;
+use Pimple\Container;
+use Pimple\ServiceProviderInterface;
 
 use Knp\Bundle\MarkdownBundle\Parser\MarkdownParser;
 
@@ -11,23 +11,18 @@ use SilexMarkdown\MarkdownExtension\MarkdownTwigExtension;
 
 class MarkdownExtension implements ServiceProviderInterface
 {
-    public function boot(Application $app)
+    public function register(Container $app)
     {
-
-    }
-
-    public function register(Application $app)
-    {
-        $app['markdown'] = $app->share(function () use ($app) {
+        $app['markdown'] = function () use ($app) {
             $features = isset($app['markdown.features']) ? $app['markdown.features'] : array();
             return new MarkdownParser($features);
-        });
+        };
 
         if (isset($app['twig'])) {
-            $app['twig'] = $app->share($app->extend('twig', function ($twig, $app) {
+            $app->extend('twig', function ($twig, $app) {
                 $twig->addExtension(new MarkdownTwigExtension($app['markdown']));
                 return $twig;
-            }));
+            });
         }
     }
 }
