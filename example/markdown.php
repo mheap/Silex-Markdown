@@ -1,16 +1,17 @@
 <?php
 
-require_once __DIR__ . '/../silex.phar';
+require_once __DIR__ . '/../vendor/autoload.php';
 
-$app = new Silex\Application();
+use Silex\Application;
+use Silex\Provider\TwigServiceProvider;
 
-$app->register(new Silex\Extension\TwigExtension(), array(
-    'twig.class_path' => __DIR__ . '/../vendor/twig/lib',
+$app = new Application();
+
+$app->register(new TwigServiceProvider, array(
     'twig.path'       => __DIR__ . '/twig'
 ));
-        
+
 $app->register(new SilexMarkdown\MarkdownExtension(), array(
-    'markdown.class_path' => __DIR__ . '/../vendor/knplabs-markdown',
     'markdown.features'   => array(
         'header' => true,
         'list' => true,
@@ -32,8 +33,8 @@ $app->register(new SilexMarkdown\MarkdownExtension(), array(
     ),
 ));
 
-$app->get('/', function() use($app) {
+$app->get('/', function () use ($app) {
     return $app['twig']->render('markdown.twig');
 });
 
-$app->run();   
+$app->run();

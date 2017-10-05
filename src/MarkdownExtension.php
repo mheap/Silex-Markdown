@@ -7,7 +7,7 @@ use Pimple\ServiceProviderInterface;
 
 use Knp\Bundle\MarkdownBundle\Parser\MarkdownParser;
 
-use SilexMarkdown\MarkdownExtension\MarkdownTwigExtension;
+use SilexMarkdown\MarkdownTwigExtension;
 
 class MarkdownExtension implements ServiceProviderInterface
 {
