@@ -18,17 +18,18 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0",
-        "knplabs/knp-markdown-bundle": "*"
+        "php": ">=7.0.0",
+        "knplabs/knp-markdown-bundle": "^1.5"
     },
     "require-dev": {
         "silex/silex": "~2.0",
         "twig/twig": ">=1.2.0",
-        "phpunit/phpunit": "^5.6"
+        "phpunit/phpunit": "^6",
+        "squizlabs/php_codesniffer": "^3.1"
     },
     "autoload": {
-        "psr-0": {
-            "SilexMarkdown": "src"
+        "psr-4": {
+            "SilexMarkdown\\": "src"
         }
     }
 }

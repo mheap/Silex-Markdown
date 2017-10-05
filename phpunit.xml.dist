@@ -14,7 +14,7 @@
 >
     <testsuites>
         <testsuite name="Silex Markdown Test Suite">
-            <directory>./tests/SilexMarkdown/</directory>
+            <directory>./tests/</directory>
         </testsuite>
     </testsuites>
 </phpunit>
