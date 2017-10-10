@@ -4,9 +4,9 @@
 
 ### Requirements
 
-This extension only works with *PHP 7.1+*, *Silex 2* and the *Memcached* driver.
-[Version 1.0.0](https://github.com/mheap/Silex-Memcache/releases/tag/1.0.0) is compatible
-with Silex 1 and both the Memcache/Memcached drivers.
+This extension only works with *PHP 7.1+* and *Silex 2*.
+[Version 1.0.0](https://github.com/mheap/Silex-Markdown/releases/tag/1.0.0) is compatible
+with Silex 1.
 
 ### Installation
 
